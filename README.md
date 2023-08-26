@@ -7,16 +7,12 @@ ADICIONANDO O ARTISTA,MUSICA E FAIXAS:
 
 
 
-DISCO ADICIONADO:
-
-
 
 ![image](https://github.com/Joaovictoraparecido/Add-Disco/assets/115484907/46189f15-aa9b-4de2-b081-ad1b835413ed)
 
 
 
 
-TELA:
 ![image](https://github.com/Joaovictoraparecido/Add-Disco/assets/115484907/e39ae04c-cc8a-40c4-bba4-99109b8d3fc1)
 
 
