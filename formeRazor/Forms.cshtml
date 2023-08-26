@@ -1,0 +1,63 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form method="post">
+            <fieldset
+                      style="width:25%;border:groove;
+border-color:red;
+background-color:lightblue">
+                <legend
+                       style="font-size:medium;
+                color:navy;background-color:gold">
+                    Adicionar Disco
+                </legend>
+                <div>
+                    <label for="NomeDisco">Nome Do Disco:</label>
+                    <input type="text" name="NomeDisco" value=""/>
+                </div>
+                <div>
+                    <label for="Artista">Nome Do Artista:</label>
+                    <input type="text" name="NomeArtista" value="" />
+                </div>
+                <div>
+                    <label for="Faixas">Quantidade de faixas:</label>
+                    <input type="text" name="Faixas" value="" />
+                </div>
+                <div>
+                    <br />
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Adicionar" class="submit"/>
+                </div>
+            </fieldset>
+
+        </form>
+        <div>
+            @{ 
+                if (IsPost)
+                {
+                    string nomeDisco = Request.Form["NomeDisco"];
+                    string nomeArtista = Request.Form["NomeArtista"];
+                    int nFaixas = Request.Form["Faixas"].AsInt();
+                    <fieldset style="width: 25%; border:groove;border-color:red;background-color:lightblue">
+                        <legend style="font-size:medium;color:navy;background-color:gold">Disco Adicionado</legend>
+                        <p>Nome Do Disco:@nomeDisco</p>
+                        <p>Nome Do Artista:@nomeArtista</p>
+                        <p>Número de Faixas:@nFaixas</p>
+                    </fieldset>
+
+                }
+            }
+        </div>
+    </div>
+</body>
+</html>
